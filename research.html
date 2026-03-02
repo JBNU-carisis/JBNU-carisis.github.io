@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research - Prof. Chanki Kim</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Roboto', sans-serif; color: #333; background-color: #fff; font-size: 16px; line-height: 1.6; }
+        a { text-decoration: none; color: #007bff; transition: 0.2s; }
+        a:hover { color: #0056b3; text-decoration: underline; }
+        .navbar { background: #fff; border-bottom: 1px solid #f0f0f0; padding: 1rem 0; }
+        .navbar-brand { font-weight: 700; color: #333 !important; }
+        .nav-link { color: #555 !important; font-weight: 500; margin-left: 15px; }
+        .nav-link:hover { color: #007bff !important; }
+        .nav-active { color: #007bff !important; }
+        .main-container { max-width: 900px; margin: 50px auto; padding: 0 20px; }
+        h2.section-title { font-size: 1.8rem; font-weight: 700; margin-top: 30px; margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 10px; color: #e74c3c; }
+        h2.section-title span { color: #333; }
+        footer { margin-top: 80px; border-top: 1px solid #eee; padding: 30px 0; text-align: center; font-size: 0.85rem; color: #999; }
+        .research-item { margin-bottom: 50px; padding-bottom: 30px; border-bottom: 1px dashed #eee; }
+        .research-item:last-child { border-bottom: none; }
+        .research-img-container { width: 100%; overflow: hidden; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.07); margin-bottom: 15px; border: 1px solid #e9ecef; }
+        .research-img-container svg { width: 100%; height: auto; display: block; transition: transform 0.3s ease; }
+        .research-img-container:hover svg { transform: scale(1.03); }
+        .research-title { font-size: 1.4rem; font-weight: 700; color: #333; margin-bottom: 10px; }
+        .research-desc { font-size: 1rem; color: #555; text-align: justify; }
+        .keyword-badge { background-color: #f8f9fa; color: #666; font-size: 0.8rem; padding: 4px 10px; border-radius: 20px; border: 1px solid #e9ecef; margin-right: 5px; display: inline-block; margin-bottom: 5px; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-sm sticky-top">
+        <div class="container main-container mt-0 mb-0 p-0">
+            <a class="navbar-brand" href="index.html">Computing and Communication System Lab</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#news">News</a></li>
+                    <li class="nav-item"><a class="nav-link nav-active" href="research.html">Research</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#publications">Publications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#members">Members</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container main-container">
+        
+        <h2 class="section-title">Research <span>Projects</span></h2>
+        
+        <p class="mb-5 text-muted">
+            Our lab focuses on the design and analysis of advanced communication and computing systems. 
+            Key research areas include error correction codes, distributed computing, IoT network optimization, and hardware acceleration.
+        </p>
+
+        <!-- 1. Distributed Computing & Storage Systems -->
+        <div class="row research-item align-items-center">
+            <div class="col-md-5">
+                <div class="research-img-container">
+                    <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#e8f4f8"/><stop offset="100%" style="stop-color:#d1ecf1"/></linearGradient>
+                            <linearGradient id="nd1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#3498db"/><stop offset="100%" style="stop-color:#2980b9"/></linearGradient>
+                            <filter id="sh" x="-10%" y="-10%" width="130%" height="130%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#00000020"/></filter>
+                        </defs>
+                        <rect width="600" height="400" fill="url(#bg1)"/>
+                        <line x1="300" y1="105" x2="150" y2="200" stroke="#3498db" stroke-width="2.5" opacity="0.4" stroke-dasharray="6,4"/>
+                        <line x1="300" y1="105" x2="450" y2="200" stroke="#3498db" stroke-width="2.5" opacity="0.4" stroke-dasharray="6,4"/>
+                        <line x1="300" y1="105" x2="300" y2="220" stroke="#3498db" stroke-width="2.5" opacity="0.4" stroke-dasharray="6,4"/>
+                        <line x1="150" y1="200" x2="450" y2="200" stroke="#3498db" stroke-width="2" opacity="0.25" stroke-dasharray="6,4"/>
+                        <line x1="150" y1="230" x2="200" y2="300" stroke="#2ecc71" stroke-width="2" opacity="0.4" stroke-dasharray="6,4"/>
+                        <line x1="300" y1="245" x2="300" y2="300" stroke="#2ecc71" stroke-width="2" opacity="0.4" stroke-dasharray="6,4"/>
+                        <line x1="450" y1="230" x2="400" y2="300" stroke="#2ecc71" stroke-width="2" opacity="0.4" stroke-dasharray="6,4"/>
+                        <text x="300" y="55" text-anchor="middle" fill="#2980b9" font-size="11" font-weight="600">Controller Node</text>
+                        <rect x="265" y="65" width="70" height="70" rx="12" fill="url(#nd1)" filter="url(#sh)"/>
+                        <rect x="278" y="82" width="44" height="5" rx="2" fill="#fff" opacity="0.9"/>
+                        <rect x="278" y="93" width="44" height="5" rx="2" fill="#fff" opacity="0.7"/>
+                        <rect x="278" y="104" width="44" height="5" rx="2" fill="#fff" opacity="0.5"/>
+                        <circle cx="288" cy="122" r="3" fill="#2ecc71"/>
+                        <rect x="115" y="170" width="70" height="60" rx="10" fill="#5dade2" filter="url(#sh)"/>
+                        <rect x="128" y="184" width="44" height="4" rx="2" fill="#fff" opacity="0.9"/>
+                        <rect x="128" y="193" width="44" height="4" rx="2" fill="#fff" opacity="0.7"/>
+                        <rect x="128" y="202" width="30" height="4" rx="2" fill="#fff" opacity="0.5"/>
+                        <rect x="265" y="185" width="70" height="60" rx="10" fill="#5dade2" filter="url(#sh)"/>
+                        <rect x="278" y="199" width="44" height="4" rx="2" fill="#fff" opacity="0.9"/>
+                        <rect x="278" y="208" width="44" height="4" rx="2" fill="#fff" opacity="0.7"/>
+                        <rect x="278" y="217" width="30" height="4" rx="2" fill="#fff" opacity="0.5"/>
+                        <rect x="415" y="170" width="70" height="60" rx="10" fill="#5dade2" filter="url(#sh)"/>
+                        <rect x="428" y="184" width="44" height="4" rx="2" fill="#fff" opacity="0.9"/>
+                        <rect x="428" y="193" width="44" height="4" rx="2" fill="#fff" opacity="0.7"/>
+                        <rect x="428" y="202" width="30" height="4" rx="2" fill="#fff" opacity="0.5"/>
+                        <!-- Storage -->
+                        <g transform="translate(170,295)"><ellipse cx="30" cy="8" rx="30" ry="8" fill="#2ecc71"/><rect x="0" y="8" width="60" height="28" fill="#27ae60" opacity="0.8"/><ellipse cx="30" cy="36" rx="30" ry="8" fill="#229954"/><text x="30" y="26" text-anchor="middle" fill="#fff" font-size="10" font-weight="600">D1</text></g>
+                        <g transform="translate(270,295)"><ellipse cx="30" cy="8" rx="30" ry="8" fill="#2ecc71"/><rect x="0" y="8" width="60" height="28" fill="#27ae60" opacity="0.8"/><ellipse cx="30" cy="36" rx="30" ry="8" fill="#229954"/><text x="30" y="26" text-anchor="middle" fill="#fff" font-size="10" font-weight="600">P1</text></g>
+                        <g transform="translate(370,295)"><ellipse cx="30" cy="8" rx="30" ry="8" fill="#2ecc71"/><rect x="0" y="8" width="60" height="28" fill="#27ae60" opacity="0.8"/><ellipse cx="30" cy="36" rx="30" ry="8" fill="#229954"/><text x="30" y="26" text-anchor="middle" fill="#fff" font-size="10" font-weight="600">D2</text></g>
+                        <text x="300" y="385" text-anchor="middle" fill="#555" font-size="12" font-weight="500" opacity="0.7">Distributed Storage with Erasure Coding</text>
+                    </svg>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <h3 class="research-title">Distributed Computing & Storage Systems</h3>
+                <div class="mb-2">
+                    <span class="keyword-badge">Erasure Coding</span>
+                    <span class="keyword-badge">Distributed Storage</span>
+                    <span class="keyword-badge">HPC</span>
+                </div>
+                <p class="research-desc">
+                    We investigate high-performance distributed computing architectures. Our recent work focuses on 
+                    accelerating erasure coding operations by exploiting multiple repair paths and optimizing 
+                    data allocation in heterogeneous environments.
+                </p>
+            </div>
+        </div>
+
+        <!-- 2. Error Control Codes (ECC) -->
+        <div class="row research-item align-items-center">
+            <div class="col-md-5 order-md-2">
+                <div class="research-img-container">
+                    <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#fdf2e9"/><stop offset="100%" style="stop-color:#f5cba7;stop-opacity:0.5"/></linearGradient>
+                        </defs>
+                        <rect width="600" height="400" fill="url(#bg2)"/>
+                        <text x="300" y="35" text-anchor="middle" fill="#666" font-size="12" font-weight="600" letter-spacing="1">LDPC TANNER GRAPH</text>
+                        <!-- Variable nodes -->
+                        <circle cx="100" cy="95" r="20" fill="#e74c3c" opacity="0.85" filter="url(#sh)"/><text x="100" y="100" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">1</text><text x="100" y="75" text-anchor="middle" fill="#888" font-size="10" font-style="italic">v1</text>
+                        <circle cx="200" cy="95" r="20" fill="#e74c3c" opacity="0.85" filter="url(#sh)"/><text x="200" y="100" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">0</text><text x="200" y="75" text-anchor="middle" fill="#888" font-size="10" font-style="italic">v2</text>
+                        <circle cx="300" cy="95" r="20" fill="#e74c3c" opacity="0.85" filter="url(#sh)"/><text x="300" y="100" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">1</text><text x="300" y="75" text-anchor="middle" fill="#888" font-size="10" font-style="italic">v3</text>
+                        <circle cx="400" cy="95" r="20" fill="#e74c3c" opacity="0.85" filter="url(#sh)"/><text x="400" y="100" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">1</text><text x="400" y="75" text-anchor="middle" fill="#888" font-size="10" font-style="italic">v4</text>
+                        <circle cx="500" cy="95" r="20" fill="#e74c3c" opacity="0.85" filter="url(#sh)"/><text x="500" y="100" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">0</text><text x="500" y="75" text-anchor="middle" fill="#888" font-size="10" font-style="italic">v5</text>
+                        <!-- Check nodes -->
+                        <rect x="148" y="248" width="48" height="40" rx="6" fill="#e67e22" opacity="0.85" filter="url(#sh)"/><text x="172" y="274" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">+</text><text x="172" y="240" text-anchor="middle" fill="#888" font-size="10" font-style="italic">c1</text>
+                        <rect x="276" y="248" width="48" height="40" rx="6" fill="#e67e22" opacity="0.85" filter="url(#sh)"/><text x="300" y="274" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">+</text><text x="300" y="240" text-anchor="middle" fill="#888" font-size="10" font-style="italic">c2</text>
+                        <rect x="404" y="248" width="48" height="40" rx="6" fill="#e67e22" opacity="0.85" filter="url(#sh)"/><text x="428" y="274" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">+</text><text x="428" y="240" text-anchor="middle" fill="#888" font-size="10" font-style="italic">c3</text>
+                        <!-- Edges c1 -->
+                        <line x1="100" y1="115" x2="172" y2="248" stroke="#c0392b" stroke-width="2" opacity="0.35"/>
+                        <line x1="200" y1="115" x2="172" y2="248" stroke="#c0392b" stroke-width="2" opacity="0.35"/>
+                        <line x1="400" y1="115" x2="172" y2="248" stroke="#c0392b" stroke-width="2" opacity="0.35"/>
+                        <!-- Edges c2 -->
+                        <line x1="100" y1="115" x2="300" y2="248" stroke="#d35400" stroke-width="2" opacity="0.35"/>
+                        <line x1="300" y1="115" x2="300" y2="248" stroke="#d35400" stroke-width="2" opacity="0.35"/>
+                        <line x1="500" y1="115" x2="300" y2="248" stroke="#d35400" stroke-width="2" opacity="0.35"/>
+                        <!-- Edges c3 -->
+                        <line x1="200" y1="115" x2="428" y2="248" stroke="#e67e22" stroke-width="2" opacity="0.35"/>
+                        <line x1="400" y1="115" x2="428" y2="248" stroke="#e67e22" stroke-width="2" opacity="0.35"/>
+                        <line x1="500" y1="115" x2="428" y2="248" stroke="#e67e22" stroke-width="2" opacity="0.35"/>
+                        <!-- Message passing dots -->
+                        <circle cx="148" cy="170" r="5" fill="#e74c3c" opacity="0.2"/><circle cx="380" cy="180" r="5" fill="#e67e22" opacity="0.2"/><circle cx="260" cy="175" r="5" fill="#d35400" opacity="0.2"/>
+                        <!-- H matrix -->
+                        <g transform="translate(100, 315)">
+                            <text x="0" y="12" fill="#555" font-size="14" font-weight="700" font-style="italic">H</text>
+                            <text x="16" y="12" fill="#555" font-size="14"> = </text>
+                            <text x="40" y="16" fill="#888" font-size="30" font-weight="300">[</text>
+                            <text x="58" y="5" fill="#c0392b" font-size="12" font-family="monospace" font-weight="600">1  1  0  1  0</text>
+                            <text x="58" y="22" fill="#d35400" font-size="12" font-family="monospace" font-weight="600">1  0  1  0  1</text>
+                            <text x="58" y="39" fill="#e67e22" font-size="12" font-family="monospace" font-weight="600">0  1  0  1  1</text>
+                            <text x="215" y="16" fill="#888" font-size="30" font-weight="300">]</text>
+                        </g>
+                        <g transform="translate(370, 332)">
+                            <text x="0" y="0" fill="#555" font-size="11" font-weight="600">Syndrome: Hx</text>
+                            <text x="83" y="-5" fill="#555" font-size="8">T</text>
+                            <text x="92" y="0" fill="#555" font-size="11"> = </text>
+                            <text x="108" y="0" fill="#2ecc71" font-size="12" font-weight="700">0</text>
+                            <text x="120" y="0" fill="#2ecc71" font-size="12">&#x2713;</text>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <div class="col-md-7 order-md-1">
+                <h3 class="research-title">Error Control Codes (ECC)</h3>
+                <div class="mb-2">
+                    <span class="keyword-badge">LDPC Codes</span>
+                    <span class="keyword-badge">LRC</span>
+                    <span class="keyword-badge">Memory Reliability</span>
+                </div>
+                <p class="research-desc">
+                    Design of advanced error correction codes for modern memory systems and wireless communications. 
+                    We are developing new constructions of Locally Repairable Codes (LRC) and LDPC codes resilient 
+                    to burst errors and silent data corruption.
+                </p>
+            </div>
+        </div>
+
+        <!-- 3. IoT Network Optimization -->
+        <div class="row research-item align-items-center">
+            <div class="col-md-5">
+                <div class="research-img-container">
+                    <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#eafaf1"/><stop offset="100%" style="stop-color:#abebc6;stop-opacity:0.5"/></linearGradient>
+                            <linearGradient id="tw" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" style="stop-color:#27ae60"/><stop offset="100%" style="stop-color:#1e8449"/></linearGradient>
+                        </defs>
+                        <rect width="600" height="400" fill="url(#bg3)"/>
+                        <!-- Gateway -->
+                        <rect x="270" y="55" width="60" height="80" rx="6" fill="url(#tw)" filter="url(#sh)"/>
+                        <rect x="282" y="65" width="36" height="10" rx="3" fill="#fff" opacity="0.3"/>
+                        <rect x="282" y="81" width="36" height="10" rx="3" fill="#fff" opacity="0.3"/>
+                        <rect x="282" y="97" width="36" height="10" rx="3" fill="#fff" opacity="0.3"/>
+                        <line x1="300" y1="55" x2="300" y2="33" stroke="#1e8449" stroke-width="3"/>
+                        <circle cx="300" cy="28" r="5" fill="#2ecc71"/>
+                        <!-- Waves -->
+                        <path d="M 268,48 Q 256,30 268,14" stroke="#27ae60" stroke-width="2" fill="none" opacity="0.5"/>
+                        <path d="M 254,52 Q 237,30 254,8" stroke="#27ae60" stroke-width="1.5" fill="none" opacity="0.3"/>
+                        <path d="M 332,48 Q 344,30 332,14" stroke="#27ae60" stroke-width="2" fill="none" opacity="0.5"/>
+                        <path d="M 346,52 Q 363,30 346,8" stroke="#27ae60" stroke-width="1.5" fill="none" opacity="0.3"/>
+                        <text x="300" y="152" text-anchor="middle" fill="#1e8449" font-size="11" font-weight="600">LoRa Gateway</text>
+                        <!-- Links -->
+                        <line x1="140" y1="230" x2="278" y2="135" stroke="#27ae60" stroke-width="1.5" opacity="0.35" stroke-dasharray="5,4"/>
+                        <line x1="260" y1="225" x2="292" y2="140" stroke="#27ae60" stroke-width="1.5" opacity="0.35" stroke-dasharray="5,4"/>
+                        <line x1="370" y1="210" x2="315" y2="135" stroke="#27ae60" stroke-width="1.5" opacity="0.35" stroke-dasharray="5,4"/>
+                        <line x1="480" y1="230" x2="325" y2="135" stroke="#27ae60" stroke-width="1.2" opacity="0.3" stroke-dasharray="5,4"/>
+                        <line x1="110" y1="290" x2="278" y2="130" stroke="#27ae60" stroke-width="1.2" opacity="0.25" stroke-dasharray="5,4"/>
+                        <!-- Sensor nodes -->
+                        <rect x="80" y="270" width="60" height="48" rx="8" fill="#16a085" filter="url(#sh)" opacity="0.85"/><text x="110" y="292" text-anchor="middle" fill="#fff" font-size="16">&#x1f321;&#xfe0f;</text><text x="110" y="310" text-anchor="middle" fill="#fff" font-size="8" font-weight="500">SF12</text>
+                        <rect x="115" y="210" width="60" height="48" rx="8" fill="#1abc9c" filter="url(#sh)" opacity="0.85"/><text x="145" y="232" text-anchor="middle" fill="#fff" font-size="16">&#x1f4a7;</text><text x="145" y="250" text-anchor="middle" fill="#fff" font-size="8" font-weight="500">SF9</text>
+                        <rect x="235" y="205" width="60" height="48" rx="8" fill="#1abc9c" filter="url(#sh)" opacity="0.85"/><text x="265" y="227" text-anchor="middle" fill="#fff" font-size="16">&#x1f4e1;</text><text x="265" y="245" text-anchor="middle" fill="#fff" font-size="8" font-weight="500">SF7</text>
+                        <rect x="345" y="190" width="60" height="48" rx="8" fill="#1abc9c" filter="url(#sh)" opacity="0.85"/><text x="375" y="212" text-anchor="middle" fill="#fff" font-size="16">&#x26a1;</text><text x="375" y="230" text-anchor="middle" fill="#fff" font-size="8" font-weight="500">SF10</text>
+                        <rect x="455" y="210" width="60" height="48" rx="8" fill="#16a085" filter="url(#sh)" opacity="0.85"/><text x="485" y="232" text-anchor="middle" fill="#fff" font-size="16">&#x1f3ed;</text><text x="485" y="250" text-anchor="middle" fill="#fff" font-size="8" font-weight="500">SF11</text>
+                        <!-- Cloud -->
+                        <g transform="translate(445, 55)"><ellipse cx="45" cy="28" rx="38" ry="16" fill="#85c1e9" opacity="0.45"/><ellipse cx="30" cy="22" rx="26" ry="14" fill="#85c1e9" opacity="0.45"/><ellipse cx="58" cy="22" rx="23" ry="12" fill="#85c1e9" opacity="0.45"/><ellipse cx="45" cy="16" rx="20" ry="11" fill="#aed6f1" opacity="0.55"/><text x="45" y="32" text-anchor="middle" fill="#2980b9" font-size="9" font-weight="500">Cloud</text></g>
+                        <line x1="330" y1="88" x2="445" y2="78" stroke="#85c1e9" stroke-width="1.5" opacity="0.4" stroke-dasharray="4,3"/>
+                        <!-- ADR box -->
+                        <g transform="translate(120, 342)">
+                            <rect x="0" y="0" width="360" height="40" rx="20" fill="#fff" stroke="#27ae60" stroke-width="1.5" opacity="0.9"/>
+                            <text x="180" y="16" text-anchor="middle" fill="#1e8449" font-size="11" font-weight="600">ADR: Adaptive Data Rate Algorithm</text>
+                            <text x="180" y="31" text-anchor="middle" fill="#888" font-size="9">Dynamic SF / TP allocation &#x2192; Energy Optimization</text>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <h3 class="research-title">IoT Network Optimization</h3>
+                <div class="mb-2">
+                    <span class="keyword-badge">LoRaWAN</span>
+                    <span class="keyword-badge">ADR Algorithm</span>
+                    <span class="keyword-badge">Energy Efficiency</span>
+                    <span class="keyword-badge">LPWAN</span>
+                </div>
+                <p class="research-desc">
+                    Design and optimization of IoT network protocols for energy-efficient and reliable communication.
+                    Our recent work focuses on improved analysis and design of Adaptive Data Rate (ADR) algorithms 
+                    for LoRaWAN systems, enabling dynamic resource allocation that maximizes network lifetime 
+                    while maintaining quality of service.
+                </p>
+            </div>
+        </div>
+
+        <!-- 4. Big Data & Computational Acceleration -->
+        <div class="row research-item align-items-center">
+            <div class="col-md-5 order-md-2">
+                <div class="research-img-container">
+                    <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#f4ecf7"/><stop offset="100%" style="stop-color:#d7bde2;stop-opacity:0.5"/></linearGradient>
+                            <linearGradient id="cp" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#8e44ad"/><stop offset="100%" style="stop-color:#6c3483"/></linearGradient>
+                        </defs>
+                        <rect width="600" height="400" fill="url(#bg4)"/>
+                        <!-- GPU chip body -->
+                        <rect x="200" y="90" width="200" height="165" rx="10" fill="url(#cp)" filter="url(#sh)"/>
+                        <!-- Pins top --><rect x="220" y="78" width="8" height="16" rx="2" fill="#9b59b6" opacity="0.7"/><rect x="240" y="78" width="8" height="16" rx="2" fill="#9b59b6" opacity="0.7"/><rect x="260" y="78" width="8" height="16" rx="2" fill="#9b59b6" opacity="0.7"/><rect x="280" y="78" width="8" height="16" rx="2" fill="#9b59b6" opacity="0.7"/><rect x="300" y="78" width="8" height="16" rx="2" fill="#9b59b6" opacity="0.7"/><rect x="320" y="78" width="8" height="16" rx="2" fill="#9b59b6" opacity="0.7"/><rect x="340" y="78" width="8" height="16" rx="2" fill="#9b59b6" opacity="0.7"/><rect x="360" y="78" width="8" height="16" rx="2" fill="#9b59b6" opacity="0.7"/>
+                        <!-- Pins bottom --><rect x="220" y="251" width="8" height="16" rx="2" fill="#9b59b6" opacity="0.7"/><rect x="240" y="251" width="8" height="16" rx="2" fill="#9b59b6" opacity="0.7"/><rect x="260" y="251" width="8" height="16" rx="2" fill="#9b59b6" opacity="0.7"/><rect x="280" y="251" width="8" height="16" rx="2" fill="#9b59b6" opacity="0.7"/><rect x="300" y="251" width="8" height="16" rx="2" fill="#9b59b6" opacity="0.7"/><rect x="320" y="251" width="8" height="16" rx="2" fill="#9b59b6" opacity="0.7"/><rect x="340" y="251" width="8" height="16" rx="2" fill="#9b59b6" opacity="0.7"/><rect x="360" y="251" width="8" height="16" rx="2" fill="#9b59b6" opacity="0.7"/>
+                        <!-- Pins left --><rect x="188" y="110" width="16" height="8" rx="2" fill="#9b59b6" opacity="0.7"/><rect x="188" y="130" width="16" height="8" rx="2" fill="#9b59b6" opacity="0.7"/><rect x="188" y="150" width="16" height="8" rx="2" fill="#9b59b6" opacity="0.7"/><rect x="188" y="170" width="16" height="8" rx="2" fill="#9b59b6" opacity="0.7"/><rect x="188" y="190" width="16" height="8" rx="2" fill="#9b59b6" opacity="0.7"/><rect x="188" y="210" width="16" height="8" rx="2" fill="#9b59b6" opacity="0.7"/>
+                        <!-- Pins right --><rect x="396" y="110" width="16" height="8" rx="2" fill="#9b59b6" opacity="0.7"/><rect x="396" y="130" width="16" height="8" rx="2" fill="#9b59b6" opacity="0.7"/><rect x="396" y="150" width="16" height="8" rx="2" fill="#9b59b6" opacity="0.7"/><rect x="396" y="170" width="16" height="8" rx="2" fill="#9b59b6" opacity="0.7"/><rect x="396" y="190" width="16" height="8" rx="2" fill="#9b59b6" opacity="0.7"/><rect x="396" y="210" width="16" height="8" rx="2" fill="#9b59b6" opacity="0.7"/>
+                        <!-- 4x4 core grid -->
+                        <rect x="222" y="108" width="34" height="28" rx="3" fill="#a569bd" opacity="0.8"/><rect x="262" y="108" width="34" height="28" rx="3" fill="#a569bd" opacity="0.8"/><rect x="302" y="108" width="34" height="28" rx="3" fill="#a569bd" opacity="0.8"/><rect x="342" y="108" width="34" height="28" rx="3" fill="#a569bd" opacity="0.8"/>
+                        <rect x="222" y="142" width="34" height="28" rx="3" fill="#a569bd" opacity="0.8"/><rect x="262" y="142" width="34" height="28" rx="3" fill="#a569bd" opacity="0.8"/><rect x="302" y="142" width="34" height="28" rx="3" fill="#a569bd" opacity="0.8"/><rect x="342" y="142" width="34" height="28" rx="3" fill="#a569bd" opacity="0.8"/>
+                        <rect x="222" y="176" width="34" height="28" rx="3" fill="#a569bd" opacity="0.8"/><rect x="262" y="176" width="34" height="28" rx="3" fill="#a569bd" opacity="0.8"/><rect x="302" y="176" width="34" height="28" rx="3" fill="#a569bd" opacity="0.8"/><rect x="342" y="176" width="34" height="28" rx="3" fill="#a569bd" opacity="0.8"/>
+                        <rect x="222" y="210" width="34" height="28" rx="3" fill="#a569bd" opacity="0.8"/><rect x="262" y="210" width="34" height="28" rx="3" fill="#a569bd" opacity="0.8"/><rect x="302" y="210" width="34" height="28" rx="3" fill="#a569bd" opacity="0.8"/><rect x="342" y="210" width="34" height="28" rx="3" fill="#a569bd" opacity="0.8"/>
+                        <!-- Data input -->
+                        <g opacity="0.6">
+                            <rect x="55" y="105" width="105" height="14" rx="3" fill="#e74c3c" opacity="0.3"/><text x="107" y="115" text-anchor="middle" fill="#c0392b" font-size="8" font-weight="600">Data Stream 1</text>
+                            <rect x="55" y="130" width="105" height="14" rx="3" fill="#3498db" opacity="0.3"/><text x="107" y="140" text-anchor="middle" fill="#2980b9" font-size="8" font-weight="600">Data Stream 2</text>
+                            <rect x="55" y="155" width="105" height="14" rx="3" fill="#2ecc71" opacity="0.3"/><text x="107" y="165" text-anchor="middle" fill="#27ae60" font-size="8" font-weight="600">Data Stream 3</text>
+                            <rect x="55" y="180" width="105" height="14" rx="3" fill="#f39c12" opacity="0.3"/><text x="107" y="190" text-anchor="middle" fill="#e67e22" font-size="8" font-weight="600">Data Stream 4</text>
+                        </g>
+                        <polygon points="168,112 178,108 178,116" fill="#c0392b" opacity="0.5"/>
+                        <polygon points="168,137 178,133 178,141" fill="#2980b9" opacity="0.5"/>
+                        <polygon points="168,162 178,158 178,166" fill="#27ae60" opacity="0.5"/>
+                        <polygon points="168,187 178,183 178,191" fill="#e67e22" opacity="0.5"/>
+                        <!-- Output -->
+                        <g transform="translate(425, 145)"><polygon points="0,5 10,0 10,10" fill="#8e44ad" opacity="0.5"/><rect x="15" y="-8" width="115" height="30" rx="6" fill="#8e44ad" opacity="0.12"/><text x="72" y="4" text-anchor="middle" fill="#6c3483" font-size="9" font-weight="600">Accelerated</text><text x="72" y="16" text-anchor="middle" fill="#6c3483" font-size="9" font-weight="600">Results</text></g>
+                        <!-- Speedup -->
+                        <g transform="translate(140, 285)">
+                            <rect x="0" y="0" width="320" height="68" rx="10" fill="#fff" opacity="0.9" stroke="#8e44ad" stroke-width="1"/>
+                            <text x="160" y="20" text-anchor="middle" fill="#6c3483" font-size="11" font-weight="700">Parallel Processing Speedup</text>
+                            <text x="15" y="40" fill="#999" font-size="9">CPU</text>
+                            <rect x="45" y="32" width="200" height="10" rx="5" fill="#eee"/><rect x="45" y="32" width="55" height="10" rx="5" fill="#e74c3c" opacity="0.7"/>
+                            <text x="260" y="41" fill="#999" font-size="9">1x</text>
+                            <text x="15" y="58" fill="#6c3483" font-size="9" font-weight="600">GPU</text>
+                            <rect x="45" y="50" width="200" height="10" rx="5" fill="#eee"/><rect x="45" y="50" width="190" height="10" rx="5" fill="#8e44ad" opacity="0.8"/>
+                            <text x="260" y="59" fill="#6c3483" font-size="9" font-weight="700">~30x</text>
+                        </g>
+                        <text x="300" y="388" text-anchor="middle" fill="#555" font-size="12" font-weight="500" opacity="0.7">GPU / FPGA Massively Parallel Architecture</text>
+                    </svg>
+                </div>
+            </div>
+            <div class="col-md-7 order-md-1">
+                <h3 class="research-title">Big Data & Computational Acceleration</h3>
+                <div class="mb-2">
+                    <span class="keyword-badge">GPU Computing</span>
+                    <span class="keyword-badge">Frequent Itemset Mining</span>
+                    <span class="keyword-badge">FPGA</span>
+                    <span class="keyword-badge">Tensor Decomposition</span>
+                </div>
+                <p class="research-desc">
+                    Accelerating data-intensive algorithms using GPUs and FPGAs for large-scale data processing.
+                    Recent projects include boosting GPU-based frequent itemset mining (GMiner++) by reducing 
+                    redundant computations, and implementing efficient hardware architectures for 
+                    post-quantum cryptography candidates.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="container">
+            &copy; 2026 Computing and Communication System Lab. Jeonbuk National University.
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
