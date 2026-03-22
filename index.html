@@ -68,7 +68,7 @@
         .profile-img {
             width: 100%;
             max-width: 220px;
-            border-radius: 50%; /* 원형 프로필 */
+            border-radius: 50%;
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
             margin-bottom: 20px;
             border: 1px solid #eee;
@@ -78,6 +78,16 @@
             font-size: 2.2rem;
             font-weight: 700;
             margin-bottom: 5px;
+        }
+
+        .profile-name a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .profile-name a:hover {
+            color: #e74c3c;
+            text-decoration: none;
         }
 
         .profile-bio {
@@ -104,13 +114,12 @@
             margin-bottom: 20px;
             border-bottom: 1px solid #eee;
             padding-bottom: 10px;
-            color: #e74c3c; /* al-folia 특유의 붉은 포인트 */
+            color: #e74c3c;
         }
 
         .section-title span {
             color: #333;
         }
-        /* 앞글자만 검정 */
 
         /* 뉴스 리스트 */
         .news-table td {
@@ -190,14 +199,14 @@
         }
         /* --- Alumni (졸업생) 스타일 --- */
         .alumni-list li {
-            color: #888; /* 전체 글자색을 회색으로 (흐리게) */
+            color: #888;
             margin-bottom: 8px;
             font-size: 0.95rem;
         }
 
         .alumni-name {
             font-weight: 600;
-            color: #666; /* 이름은 약간 더 진하게 */
+            color: #666;
         }
 
         .alumni-role {
@@ -207,7 +216,7 @@
 
         .current-pos {
             display: inline-block;
-            background-color: #f1f3f5; /* 아주 연한 회색 배경 */
+            background-color: #f1f3f5;
             color: #495057;
             padding: 0px 6px;
             border-radius: 4px;
@@ -219,7 +228,7 @@
             .current-pos i {
                 font-size: 0.7rem;
                 margin-right: 3px;
-                color: #007bff; /* 화살표 아이콘 파란색 포인트 */
+                color: #007bff;
             }
     </style>
 </head>
@@ -249,7 +258,7 @@
             <div class="col-md-8 order-2 order-md-1">
                 <div class="profile-section">
                     <h2 class="profile-name mb-1" style="font-weight: 700;">
-                        김찬기 <span style="font-weight: 300; font-size: 0.8em; color:#777;">(Prof. Chanki Kim)</span>
+                        <a href="cv.html">김찬기</a> <span style="font-weight: 300; font-size: 0.8em; color:#777;">(Prof. Chanki Kim)</span>
                     </h2>
 
                     <div class="profile-bio mb-3" style="color: #555;">
@@ -733,7 +742,3 @@
 </body>
 
 </html>
-
-
-
-
